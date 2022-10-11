@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "pipeCalc.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Materials Hardware & Supply Co, Inc.</h1>
+    <h2>Stainless Steel Pipe Pressure Calculator</h2>
+    <ul>
+        <li>t = Pressure design thickness</li>
+        <li>d = Inside diameter of pipe</li>
+        <li>P = Internal Pressure/1000 PSI</li>
+        <li>D = Outside diameter</li>
+        <li>E = Qaulity factor A312 pipeL Seamless = 1.0; Single Weld = 0.8; Double Weld = 0.85</li>
+        <li>s = Stress value A312 316L pipe up to 300 Deg F = 16.7</li>
+        <li>c = Corrosion and Erosion allowances per ASME B31.3 based on ASME B16.5 CL 150 = 0.04</li>
+    </ul>
+    <div>
+        (tm = t + c) = Minimum required thickness, including mechanical, corrosion and erosion allowances
+    </div>
+    <h2> Enter Values Here</h2>
+    <section>
+        <label for = "p">P</label>
+        <input type = "text" id = "pressure" name = "p">
+        <label for = "d">D</label>
+        <input type = "text" id = "outsideDiameter" name = "d">
+        <label for = "e">E</label>
+        <input type = "text" id = "qualityFactor" name = "e">
+        <label for = "s">S</label>
+        <input type = "text" id = "stressValue" name = "s">
+        <label for = "c">C</label>
+        <input type = "text" id = "corrosionErrosion" name = "c">
+    </section>
+
+    <section class = "results">
+        <label for = "Pressure Design Thickness">t = PD/2SE</label>
+        <input type = "text" id = "pressureDesign" name = "Pressure Design Thickness">
+        <label for = "Required Pipe Thickness">tm = t + c</label>
+        <input type = "text" id = "requiredThickness" name = "Required Pipe Thickness">
+        <label for = "Proposed Thickness">Proposed Wall Thickness</label>
+        <input type = "text" id = "proposedThickness" name = "Proposed Thickness">
+        <label for = "Does or Does Not Comply">Does/Does not comply</label>
+        <input type = "text" id = "comply" name = "Does or Does Not Comply">
+    </section>
+    <section class = "disclaimer">
+        <p>THE ALLOWABLE STRESS VALUE USED AS SHOWN IN APPENDIX "A" OF ANSI B31.3-1993 FOR WELDED PIPE TO ASTM A 312 HAVIN WELDED JOINT FACTOR OF 0.80</p>
+        <P>ALLOWABLE WORKING PRESSURES SHOWN FOR EACH SIZE REFLECT THE MINUS 12.5% MANUFACTURERS WALL TOLERANCE</P>
+    </section>
+    <form>
+        <label>
+    
+</body>
+</html>
