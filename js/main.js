@@ -43,6 +43,9 @@ function pun(){
     }
     else{(isNaN(document.querySelector('#comply')))
         alert('Enter Values to calculate');
+        document.querySelector('#pressureDesign').value = 'Input numbers';
+        document.querySelector('#requiredThickness').value = 'Input numbers';
+        document.querySelector('#comply').value = 'Input numbers';  
     }
 }
 
@@ -78,6 +81,8 @@ function run(){
 
     if((isNaN(document.querySelector('#maxAllowResult')))){
     alert('Enter Values to calculate');
+    document.querySelector('#maxAllowResult').value = 'Input numbers' 
+    document.querySelector('#maxResultMinus').value = 'Input numbers' 
     }
 }
 
